@@ -1,0 +1,30 @@
+ponp  <-  function(x)
+{
+	for(i in 1:x)
+	{
+		if(x==1||x==0)
+			{
+			print(paste(x," is neither a Prime number nor a Non-Prime number."));
+			break;
+			}
+		else if(i==x)
+			{
+			break;
+			}
+		else if(x%%i==0)
+			{
+			a <- i;
+			}
+	}
+	if(i>1)
+	{
+		if(a==1 && !(x==0))
+		{	
+		print(paste(x," is a Prime number."))
+		}
+		else if(a!=1 && !(x==0))
+		{
+		print(paste(x," is a Non-Prime number."))
+		}
+	}	
+}
